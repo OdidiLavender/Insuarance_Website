@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("Assets/homepage.png");
+
+  min-height: 45rem;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+}
+.links{
+    padding: 0;
+}
+/* Position the navbar container inside the image */
+.container {
+  margin: 0;
+  width: auto;
+}
+.fields{
+    margin-top: 20px;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  /* background-color: #333; */
+}
+
+/* Navbar links */
+.topnav a {
+  /* float: left; */
+  /* margin-left: 10%; */
+  color: #f2f2f2;
+  text-align: center;
+  padding: 2px;
+  margin-left: 5%;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+.logo{
+    font-weight: bold;
+    margin-left: 10%;
+    margin-top: 5%;
+    color: white;
+}
+.button{
+    background-color: #23A6F0;
+    border: none;
+    height: 30px;
+    width: 170px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 2%;
+}
