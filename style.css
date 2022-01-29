@@ -23,10 +23,14 @@ html{
   overflow-x: hidden;
   scroll-padding-top: 7rem;
   scroll-behavior: smooth;
+  
+}
+.homepage{
   background-image: url('./image/home-img.png');
   background-size: cover;
   background-repeat: no-repeat;
-  
+  height: 750px;
+
 }
 
 section{
@@ -187,6 +191,59 @@ button {
         border-color: white;
 
     }
+    .icons-container{
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      gap: 1.5rem;
+      margin-top: -10%;
+    }
+    .icons-container .icon{
+      display:block ;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 2rem;
+      box-shadow: var(--box-shadow);
+      border-radius: .5rem;
+      background-color: #fff;
+    }
+    .icons-container .icon i{
+      height:6rem;
+      width:6rem;
+      line-height:5rem;
+      font-size:2.5rem;
+      color:var(--black);
+      background:#eee;
+      text-align: center;
+      border-radius: 50%;
+     
+      
+    }
+    .icons-container .icon .content h3{
+      font-size: 2.5rem;
+      color:var(--yellow);
+    }
+    .icons-container .icon .content p{
+      font-size: 1.5rem;
+      color:var(--light-color);
+    }
+    .icons-container .icon:hover{
+      background:var(--Project-Primary-Color);
+    }
+    .icons-container .icon:hover i{
+      background:var(--light-yellow);
+    }
+    .icons-container .icon:hover .content h3{
+      color:#fff;
+      
+    }
+    .icons-container .icon:hover .content p{
+      color:#eee;
+    }
+.text3{
+  color: #0000;
+}    
 
 
 
@@ -252,3 +309,4 @@ button {
   }
 
 }
+.icons-container
