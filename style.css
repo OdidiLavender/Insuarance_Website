@@ -1,67 +1,254 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+:root{
+    --Project-Primary-Color:#23A6F0;
+    --Background-Color:#252B42;
+    --black: #00000;
+    --white: #fff
+    /* Font type: Montserrat */
+
+}
+*{
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-}
-
-.bg-img {
-  /* The image used */
-  background-image: url("Assets/homepage.png");
-
-  min-height: 45rem;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  /* Needed to position the navbar */
-}
-.links{
-    padding: 0;
-}
-/* Position the navbar container inside the image */
-.container {
-  margin: 0;
-  width: auto;
-}
-.fields{
-    margin-top: 20px;
-}
-
-/* The navbar */
-.topnav {
-  overflow: hidden;
-  /* background-color: #333; */
-}
-
-/* Navbar links */
-.topnav a {
-  /* float: left; */
-  /* margin-left: 10%; */
-  color: #f2f2f2;
-  text-align: center;
-  padding: 2px;
-  margin-left: 5%;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
   text-decoration: none;
-  font-size: 17px;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+  background-image: url('./image/home-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 
-.topnav a:hover {
-  color: black;
+section{
+  padding:2rem 9%;
+
 }
-.logo{
-    font-weight: bold;
-    margin-left: 10%;
-    margin-top: 5%;
-    color: white;
+.heading{
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 4.5rem;
+  color:var(--black);
 }
-.button{
-    background-color: #23A6F0;
-    border: none;
-    height: 30px;
-    width: 170px;
-    color: white;
-    border-radius: 5px;
-    margin-left: 2%;
+.heading span{
+  position: relative;
+  z-index: 0;
+}
+
+.heading span::before{
+  content: '';
+  position: absolute;
+  bottom:1rem; left:0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
+}
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  background: var(--Project-Primary-Color);
+  font-weight: 500;
+  font-size: 1.7rem;
+  cursor: pointer;
+  padding: .8rem 3rem;
+}
+.header{
+  top: 0;left: 0;right: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 9%;
+}
+.header .logo{
+  font-size: 2.5rem;
+  color: var(--white);
+  font-weight: bolder;
+}
+.header .logo span{
+  color: var(--light-yellow);
+}
+.header .navbar a{
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: var(--white)
+}
+.login{
+  font-size: 1.7rem;
+  margin: 0 2rem;
+  color: var(--white)
+}
+.header .navbar a:hover{
+  color: var(--white);
+}
+.header .btn{
+  margin-top: 0;
+  height: 60px;
+}
+.header #login-btn i{
+  font-size: 2.5rem;
+  color: var(--white);
+  margin-left: 10px;
+  cursor: pointer;
+}
+#menu-btn{
+  font-size: 2.5rem;
+  color:var(--light-color);
+  cursor: pointer;
+}
+.header.active{
+  box-shadow: var(--box-shadow);
+  padding: 2rem 9%;
+}
+#menu-btn{
+  font-size: 1.5rem;
+  color:var(--Project-Primary-Color);
+  cursor: pointer;
+  display: none;
+}
+.home img{
+    width: 100%;
+    margin: 1rem 0;
+}
+.home{
+  padding-top: 2rem;
+  text-align: center;
+  overflow-x: hidden;
+}
+.home h1{
+  font-size: 4.5vw;
+  color: var(--white);
+}
+.text1{
+  font-size: 20px;
+  color: #fff;
+}
+.home img{
+  width: 100%;
+  margin: 1rem 0;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+.outline {
+        position: relative;
+        z-index: 3;
+        background: transparent;
+        color: #1172c4;
+        font-size: 14px;
+        border-color: #fff;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 22px;
+        padding: 10px 40px;
+        text-transform: uppercase;
+        transition: all 0.2s linear;
+}
+.a {
+            text-decoration: none;
+    }
+
+.outline:hover {
+        color: white;
+        background: #00aeef;
+        border: none;
+        transition: all 0.2s linear;
+    }
+.outline:active {
+        border-radius: 22px;
+    }
+.white-blue {
+        font-weight: 700;
+        color: #00aeef;
+        border: none;
+        background: white;
+    }
+.white-blue:hover {
+        color: white;
+        background: #00aeef;
+        border-color: white;
+
+    }
+
+
+
+
+
+/* media queries */
+@media(max-width:991px){
+  html{
+      font-size: 55%;
+      
+  }
+  .header{
+      padding: 2rem;
+  }
+  .header.active{
+      padding: 2rem;
+  }
+  section{
+      padding:2rem;
+      
+  }
+
+}
+@media(max-width:768px){
+  #menu-btn{
+      display: block;
+  }
+  #menu-btn.fa-times{
+      transform: rotate(180deg);
+  }
+  .header #login-btn i{
+      display: block;
+  }
+  .header #login-btn .btn{
+      display: none;
+  }
+  .header .navbar{
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top: var(--border);
+      clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
+  }
+  .header .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+  }
+  .header .navbar a{
+      display: block;
+      margin: 2rem;
+      font-size: 2rem;
+  }
+
+}
+@media(max-width:450px){
+  html{
+      font-size: 50%;
+      
+  }
+  .heading{
+      font-size: 3rem;
+  }
+
 }
