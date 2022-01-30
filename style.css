@@ -307,6 +307,86 @@ button {
   width:35%;
   height:50%;
 }
+.cards{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 0;
+}
+.cards .icon{
+  display:block ;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  border-radius: .5rem;
+  background-color: #fff;
+}
+.cards .icon i{
+  height: 0rem;
+  width: 0rem;
+  line-height: 5rem;
+  margin-left: 15%;
+  font-size: 2.5rem;
+  color: var(--black);
+  text-align: center;
+  border-radius: 50%;
+ 
+  
+}
+.cards .icon .content h3{
+  font-size: 2.5rem;
+  color:var(--yellow);
+}
+.cards .icon .content p{
+  font-size: 1.5rem;
+  color:var(--light-color);
+}
+.cards .icon:hover{
+  background:var(--Project-Primary-Color);
+}
+.cards .icon:hover i{
+  background:var(--light-yellow);
+}
+.cards .icon:hover .content h3{
+  color:#fff;
+  
+}
+.cards .icon:hover .content p{
+  color:#eee;
+}
+
+.brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem;
+}
+
+.brands__item {
+  background: #eee;
+}
+
+.brands__item img {
+  display: block;
+  margin-left: 50px;
+  /* Make sure max-width is added */
+  max-width: 40%;
+}
+.email-text{
+  margin-left: 15%;
+  margin-top: 3%;
+  color: white;
+  font-size: 15px;
+}
+.input{
+  float: right;
+  padding: 10px;
+  margin-top: 40px;
+  margin-left: 55px;
+}
+
 
 
 
@@ -326,7 +406,7 @@ button {
       padding:2rem;
       
   }
-  .grid-container{
+  /* .grid-container{
 display: flex;
   }
   .vector{
@@ -359,7 +439,7 @@ display: flex;
     height: 3px;
     width:3px;
     
-  }
+  } */
   
      
   
