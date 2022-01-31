@@ -628,23 +628,23 @@ width: 50%;
   display: flex;
   justify-content: space-around;
 }
-.info{
+.information{
   margin: 20px;
 }
-.info>p{
+.information>p{
   font-size: large;
   font-weight: 700;
   margin-bottom: 15px;
 }
-.info>ul>li{
+.information>ul>li{
   list-style-type: none;
   margin-bottom: 15px;
 }
-.info>ul>li>a{
+.information>ul>li>a{
   text-decoration: none;
   color: grey;
 }
-.info>ul>li>a:hover{
+.information>ul>li>a:hover{
   color: #23A6F0;
 }
 .quote:last-child{
